@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'mixins';
+
+// universal styling
+h1 {
+  font-weight: $light-font-weight;
+}
+
+ul {
+  padding: 0;
+  li {
+    @include breakpoint(xs) {
+      margin-bottom: $baseline;
+    }
+    list-style-type: none;
+    padding-right: $baseline;
+  }
+}
+
+// shared styling
+.about-bg,
+.about-mobile-bg {
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+}
+
+h1,
+ul {
+  @include breakpoint(xs) {
+    text-align: center;
+  }
+}
+
+// individual styling
+#about {
+  &-bg {
+    background-image: url('http://via.placeholder.com/1200x600');
+    height: $header-height * 9;
+    position: relative;
+    z-index: 1;
+  }
+  &-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.about-mobile {
+  &-bg {
+    background-image: url('http://via.placeholder.com/600x300');
+    height: $header-height * 4;
+  }
+}
