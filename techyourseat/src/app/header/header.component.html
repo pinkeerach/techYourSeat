@@ -1,1 +1,28 @@
-<mat-toolbar color="primary">#techYourSeat</mat-toolbar>
+<mat-toolbar class="header" color="primary">
+  <span>#techYourSeat</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+
+  <div fxHide fxShow.gt-xs>
+    <button mat-button id="about" class="header-item">about</button>
+    <button mat-button id="event" class="header-item">event</button>
+    <button mat-button id="venue" class="header-item">venue</button>
+    <button mat-button id="sponsor" class="header-item">sponsor</button>
+    <button mat-button mat-raised-button id="register" class="header-item">register</button>
+  </div>
+
+  <div fxHide fxShow.xs>
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item id="about" class="header-item">about</button>
+      <button mat-menu-item id="event" class="header-item">event</button>
+      <button mat-menu-item id="venue" class="header-item">venue</button>
+      <button mat-menu-item id="sponsor" class="header-item">sponsor</button>
+      <button mat-menu-item id="register" class="header-item">register</button>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
