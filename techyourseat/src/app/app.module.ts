@@ -6,9 +6,15 @@ import { SharedModule } from './_shared/shared.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SponsorsComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    AboutComponent,
+    SponsorsComponent
+  ],
   imports: [BrowserModule, BrowserAnimationsModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent]
