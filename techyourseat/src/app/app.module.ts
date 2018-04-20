@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    LocationComponent
   ],
   imports: [BrowserModule, BrowserAnimationsModule, SharedModule],
   providers: [],
