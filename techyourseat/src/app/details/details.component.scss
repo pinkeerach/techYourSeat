@@ -1,0 +1,9 @@
+@import '../../assets/scss/setup/variables';
+
+h1 {
+  font-weight: $base-font-weight;
+}
+
+#details {
+  background-color: $light-background;
+}
