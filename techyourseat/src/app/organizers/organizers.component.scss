@@ -1,0 +1,10 @@
+@import '../../assets/scss/setup/_variables.scss';
+
+img {
+  border-radius: 50%;
+  max-height: 100px;
+}
+
+h1 {
+  font-weight: $base-font-weight;
+}
