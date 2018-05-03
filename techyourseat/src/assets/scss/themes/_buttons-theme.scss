@@ -10,6 +10,7 @@
   }
 
   .mat-raised-button {
-    background: $dark-background;
+    background: mat-color($background, background);
+    color: mat-color($foreground, text);
   }
 }

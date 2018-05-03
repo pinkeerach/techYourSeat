@@ -1,0 +1,11 @@
+@import 'variables';
+
+#contact {
+  background: $light-grey;
+  .contact-form {
+    padding: $baseline * 4;
+    &-container {
+      padding: $baseline;
+    }
+  }
+}
