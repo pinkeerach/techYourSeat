@@ -1,0 +1,26 @@
+<section id="contact">
+  <div class="contact-form" fxLayout="column">
+    <h1>Interested in becoming a sponsor?</h1>
+    <p class="pb4">Please complete the form below, or send an email to
+      <a href="mailto:hello@techyourseat.com">hello@techyourseat.com</a>
+    </p>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="24px">
+      <mat-form-field fxFlex="33">
+        <input matInput placeholder="Full Name">
+      </mat-form-field>
+      <mat-form-field fxFlex="33">
+        <input matInput placeholder="Company">
+      </mat-form-field>
+      <mat-form-field fxFlex="33">
+        <input matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+    <mat-form-field>
+      <textarea matInput placeholder="Message"></textarea>
+    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="end end">
+      <button mat-raised-button>Submit</button>
+    </div>
+  </div>
+</section>
