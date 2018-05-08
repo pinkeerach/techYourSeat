@@ -12,7 +12,8 @@
         <input matInput placeholder="Company">
       </mat-form-field>
       <mat-form-field fxFlex="33">
-        <input matInput placeholder="Email">
+        <input matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
       </mat-form-field>
     </div>
     <mat-form-field>
