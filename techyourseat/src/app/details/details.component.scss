@@ -1,0 +1,14 @@
+@import '../../assets/scss/setup/variables';
+
+h1, h3 {
+  font-weight: $base-font-weight;
+}
+
+#details {
+  background-color: $light-background;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 150px;
+}
