@@ -10,6 +10,7 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { DetailsComponent } from './details/details.component';
 import { OrganizersComponent } from './organizers/organizers.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { OrganizersComponent } from './organizers/organizers.component';
     HeaderComponent,
     AboutComponent,
     SponsorsComponent,
+    DetailsComponent,
     ContactComponent,
     FooterComponent,
     OrganizersComponent
