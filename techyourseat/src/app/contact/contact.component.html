@@ -1,26 +1,15 @@
 <section id="contact">
-  <div class="contact-form" fxLayout="column">
-    <h1>Interested in becoming a sponsor?</h1>
-    <p class="pb4">Please complete the form below, or send an email to
-      <a href="mailto:hello@techyourseat.com">hello@techyourseat.com</a>
+  <div class="contact-form" fxLayout="column" fxLayoutAlign="center center">
+    <h1>Interested in learning more?</h1>
+    <p class="pb4">Please click on one of the icons below to email us, or check out our social media page.
     </p>
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="24px">
-      <mat-form-field fxFlex="33">
-        <input matInput placeholder="Full Name">
-      </mat-form-field>
-      <mat-form-field fxFlex="33">
-        <input matInput placeholder="Company">
-      </mat-form-field>
-      <mat-form-field fxFlex="33">
-        <input matInput placeholder="Enter your email" [formControl]="email" required>
-        <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
-      </mat-form-field>
-    </div>
-    <mat-form-field>
-      <textarea matInput placeholder="Message"></textarea>
-    </mat-form-field>
-    <div fxLayout="row" fxLayoutAlign="end end">
-      <button mat-raised-button>Submit</button>
+    <div>
+      <a class="pt2" href="mailto:hello@techyourseat.com">
+        <img src="../../assets/images/mail.png" alt="tech your seat instagram page">
+      </a>
+      <a class="pt2 pr2" href="">
+        <img src="../../assets/images/instagram.png" alt="tech your seat instagram page">
+      </a>
     </div>
   </div>
 </section>
