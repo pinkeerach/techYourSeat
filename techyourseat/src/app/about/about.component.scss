@@ -1,10 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
-// universal styling
-h1 {
-  font-weight: $light-font-weight;
-}
+// shared styling
 
 ul {
   padding: 0;
@@ -17,7 +14,6 @@ ul {
   }
 }
 
-// shared styling
 .about-bg,
 .about-mobile-bg {
   background-size: cover;
