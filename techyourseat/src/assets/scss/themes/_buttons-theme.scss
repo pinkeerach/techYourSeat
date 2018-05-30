@@ -3,7 +3,10 @@
   $accent: map-get($theme, accent);
 
   button {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    span {
+      font-size: $base-font-size;
+    }
   }
   .mat-raised-button {
     background-color: mat-color($accent);
