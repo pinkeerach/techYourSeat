@@ -5,20 +5,20 @@
   <span class="fill-remaining-space"></span>
 
   <div fxHide fxShow.gt-xs>
-    <button mat-button class="header-item">about</button>
-    <button mat-button class="header-item">event</button>
-    <button mat-button class="header-item">venue</button>
-    <button mat-button class="header-item">sponsor</button>
-    <button mat-button mat-raised-button class="header-item">register</button>
+    <button mat-button [ngx-scroll-to]="'#about'">about</button>
+    <button mat-button [ngx-scroll-to]="'#event'">event</button>
+    <button mat-button [ngx-scroll-to]="'#sponsor'">sponsors</button>
+    <button mat-button [ngx-scroll-to]="'#contact'">contact</button>
+    <button mat-button mat-raised-button>register</button>
   </div>
 
   <div fxHide fxShow.xs>
     <mat-menu #appMenu="matMenu">
-      <button mat-menu-item class="header-item">about</button>
-      <button mat-menu-item class="header-item">event</button>
-      <button mat-menu-item class="header-item">venue</button>
-      <button mat-menu-item class="header-item">sponsor</button>
-      <button mat-menu-item class="header-item">register</button>
+      <button mat-menu-item [ngx-scroll-to]="'#about'">about</button>
+      <button mat-menu-item [ngx-scroll-to]="'#event'">event</button>
+      <button mat-menu-item [ngx-scroll-to]="'#sponsor'">sponsors</button>
+      <button mat-menu-item [ngx-scroll-to]="'#contact'">contact</button>
+      <button mat-menu-item>register</button>
     </mat-menu>
 
     <button mat-icon-button [matMenuTriggerFor]="appMenu">
