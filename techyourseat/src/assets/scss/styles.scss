@@ -46,3 +46,7 @@
   @include angular-material-theme($tys-dark-theme);
   @include custom-components-theme($tys-dark-theme);
 }
+
+.font-weight-bold {
+  font-weight: $bold-font-weight;
+}
