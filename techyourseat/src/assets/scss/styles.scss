@@ -50,3 +50,8 @@
 .font-weight-bold {
   font-weight: $bold-font-weight;
 }
+
+.button-link a {
+  color: $white;
+  letter-spacing: normal;
+}
