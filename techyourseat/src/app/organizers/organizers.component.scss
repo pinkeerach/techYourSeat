@@ -1,4 +1,8 @@
-@import '../../assets/scss/setup/_variables.scss';
+@import 'variables';
+
+#organizers {
+  background-color: $light-accent;
+}
 
 img {
   border-radius: 50%;
