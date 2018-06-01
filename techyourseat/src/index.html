@@ -14,18 +14,10 @@
 
 <body>
   <app-root></app-root>
-  <script>
-    function initMap() {
-      var goodroad = {lat: 35.185145, lng: -80.879409};
-      var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 16, center: goodroad});
-      var marker = new google.maps.Marker({position: goodroad, map: map});
-    }
-  </script>
-  <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8A3wPV6pwrtaEiTyhM5bPEJzQ2BpLZj8&callback=initMap">
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8A3wPV6pwrtaEiTyhM5bPEJzQ2BpLZj8">
+  </script>
   <noscript>
     <h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica;">
       Sorry, JavaScript needs to be enabled in order to run this application.
