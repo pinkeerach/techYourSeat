@@ -1,0 +1,19 @@
+@import '../../assets/scss/setup/variables';
+
+h1, h3 {
+  text-align: center;
+  font-weight: $base-font-weight;
+}
+
+button {
+  color: $white;
+}
+
+.light-background {
+  background-color: $light-background;
+}
+
+#map {
+  width: 100%;
+  min-height: 300px;
+}
