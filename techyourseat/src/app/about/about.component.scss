@@ -31,7 +31,8 @@ ul {
 // individual styling
 #about {
   .about-bg {
-    background-image: url('http://via.placeholder.com/1200x600');
+    background-image: url('../../assets/images/tys.jpg');
+    background-position: center;
     height: $header-height * 9;
     position: relative;
     z-index: 1;
