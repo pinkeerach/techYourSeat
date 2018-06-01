@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
+import { LocationComponent } from './location/location.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
@@ -23,7 +24,8 @@ import { OrganizersComponent } from './organizers/organizers.component';
     DetailsComponent,
     ContactComponent,
     FooterComponent,
-    OrganizersComponent
+    OrganizersComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
