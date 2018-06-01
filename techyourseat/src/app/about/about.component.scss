@@ -37,7 +37,7 @@ ul {
     position: relative;
     z-index: 1;
     &-overlay {
-      background-color: rgba(0, 0, 0, 0.65);
+      background-color: rgba(0, 0, 0, 0.75);
       box-sizing: border-box;
       color: $white;
       position: absolute;
@@ -50,7 +50,8 @@ ul {
 
 .about-mobile {
   &-bg {
-    background-image: url('http://via.placeholder.com/600x300');
+    background-image: url('../../assets/images/tys.jpg');
+    background-position: center;
     height: $header-height * 4;
   }
 }
