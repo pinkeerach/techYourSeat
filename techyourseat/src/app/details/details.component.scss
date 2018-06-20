@@ -1,12 +1,16 @@
 @import 'variables';
+@import 'mixins';
+
+#event {
+  padding: 64px;
+  @include breakpoint(xs) {
+    padding: 64px 16px;
+  }
+}
 
 h1,
 h2 {
   font-weight: $base-font-weight;
-}
-
-#event {
-  background-color: $light-background;
 }
 
 img {

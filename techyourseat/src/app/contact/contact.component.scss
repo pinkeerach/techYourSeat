@@ -1,12 +1,10 @@
 @import 'variables';
+@import 'mixins';
 
 #contact {
-  background-color: $light-accent;
-  .contact-form {
-    padding: $baseline * 4;
-    &-container {
-      padding: $baseline;
-    }
+  padding: 64px;
+  @include breakpoint(xs) {
+    padding: 64px 16px;
   }
   img {
     width: 80px;

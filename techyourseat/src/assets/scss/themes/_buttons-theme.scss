@@ -4,11 +4,16 @@
 
   button {
     text-transform: capitalize;
+    font-weight: 400;
     span {
       font-size: $base-font-size;
     }
   }
   .mat-raised-button {
     background-color: mat-color($accent);
+    a {
+      font-weight: 500;
+      font-size: $base-font-size;
+    }
   }
 }

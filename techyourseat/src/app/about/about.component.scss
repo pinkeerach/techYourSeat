@@ -21,8 +21,7 @@ ul {
   width: 100%;
 }
 
-h1,
-ul {
+h1 {
   @include breakpoint(xs) {
     text-align: center;
   }
