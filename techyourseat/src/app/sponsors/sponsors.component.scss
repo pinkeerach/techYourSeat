@@ -1,5 +1,9 @@
 @import 'variables';
 
 img {
-  max-width: 200px;
+  max-width: $baseline * 15;
+}
+
+.microsoft-logo {
+  max-width: $baseline * 20;
 }
