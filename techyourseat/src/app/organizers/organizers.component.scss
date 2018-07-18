@@ -3,16 +3,26 @@
 #organizers {
   background-color: $light-accent;
 }
-
-img {
-  border-radius: 50%;
-  max-height: 100px;
-}
-
-a {
-  text-align: center;
-}
-
 h1 {
   font-weight: $base-font-weight;
+}
+img {
+  border-radius: 50%;
+  max-height: 150px;
+}
+img,
+label,
+a {
+  display: block;
+  text-align: center;
+}
+.profile {
+  padding: 1rem;
+}
+.mobile-profile {
+  padding: 1rem;
+}
+.mobile-profile img {
+  max-height: 80px;
+  margin: 0 auto;
 }
