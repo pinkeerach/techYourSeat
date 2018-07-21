@@ -5,8 +5,8 @@
   <div fxHide fxShow.gt-xs>
     <button mat-button [ngx-scroll-to]="'#about'">about</button>
     <button mat-button [ngx-scroll-to]="'#event'">event</button>
-    <button mat-button [ngx-scroll-to]="'#sponsor'">sponsors</button>
     <button mat-button [ngx-scroll-to]="'#contact'">contact</button>
+    <button mat-button [ngx-scroll-to]="'#sponsors'">sponsors</button>
     <button mat-button mat-raised-button class="button-link">
       <a href="https://www.eventbrite.com/e/charlotte-women-in-tech-meet-greet-tickets-46532670470" target="_blank">register
       </a>
@@ -14,12 +14,15 @@
   </div>
 
   <div fxHide fxShow.xs>
-    <mat-menu #appMenu="matMenu">
+    <mat-menu id="nav-menu" #appMenu="matMenu">
       <button mat-menu-item [ngx-scroll-to]="'#about'">about</button>
       <button mat-menu-item [ngx-scroll-to]="'#event'">event</button>
-      <button mat-menu-item [ngx-scroll-to]="'#sponsor'">sponsors</button>
       <button mat-menu-item [ngx-scroll-to]="'#contact'">contact</button>
-      <button mat-menu-item>register</button>
+      <button mat-menu-item [ngx-scroll-to]="'#sponsors'">sponsors</button>
+      <button mat-menu-item>
+        <a href="https://www.eventbrite.com/e/charlotte-women-in-tech-meet-greet-tickets-46532670470" target="_blank">register
+        </a>
+      </button>
     </mat-menu>
 
     <button mat-icon-button [matMenuTriggerFor]="appMenu">

@@ -87,3 +87,7 @@ mat-toolbar {
     }
   }
 }
+
+button.mat-menu-item {
+  text-transform: capitalize;
+}
