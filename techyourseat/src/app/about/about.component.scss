@@ -1,56 +1,31 @@
 @import 'variables';
 @import 'mixins';
 
-// shared styling
-
-ul {
-  padding: 0;
-  li {
-    @include breakpoint(xs) {
-      margin-bottom: $baseline;
-    }
-    list-style-type: none;
-    padding-right: $baseline;
-  }
-}
-
-.about-bg,
-.about-mobile-bg {
-  background-size: cover;
-  background-position: bottom;
-  width: 100%;
-}
-
-h1 {
+.about-description {
+  max-width: 100%;
+  margin: 0 auto;
   @include breakpoint(xs) {
-    text-align: center;
+    text-align: justify;
   }
 }
 
-// individual styling
-#about {
-  .about-bg {
-    background-image: url('../../assets/images/tys.jpg');
-    background-position: center;
-    height: $header-height * 9;
-    position: relative;
-    z-index: 1;
-    &-overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      box-sizing: border-box;
-      color: $white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
+.about-left {
+  margin-right: $baseline * 5;
+  @include breakpoint(sm) {
+    margin: auto;
+  }
+  @include breakpoint(xs) {
+    margin: auto;
+  }
+}
+
+.about-image {
+  width: 100%;
+  margin: 0 auto;
+  .about-groups {
+    max-height: 400px;
+    @include breakpoint(xs) {
+      max-height: 300px;
     }
-  }
-}
-
-.about-mobile {
-  &-bg {
-    background-image: url('../../assets/images/tys.jpg');
-    background-position: center;
-    height: $header-height * 4;
   }
 }

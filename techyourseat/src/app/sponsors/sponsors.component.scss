@@ -1,9 +1,14 @@
 @import 'variables';
+@import 'mixins';
 
 img {
-  max-width: $baseline * 15;
+  max-width: $baseline * 25;
+  @include breakpoint(xs) {
+    max-width: $baseline * 16;
+  }
 }
 
-.microsoft-logo {
-  max-width: $baseline * 20;
+h2,
+.sponsor-right {
+  text-align: center;
 }

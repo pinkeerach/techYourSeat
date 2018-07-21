@@ -14,7 +14,8 @@ import {
   MatProgressBarModule,
   MatToolbarModule,
   MatSelectModule,
-  MatMenuModule
+  MatMenuModule,
+  MatGridListModule
 } from '@angular/material';
 
 const modules: Array<any> = [
@@ -32,7 +33,8 @@ const modules: Array<any> = [
   MatProgressBarModule,
   MatToolbarModule,
   MatSelectModule,
-  MatMenuModule
+  MatMenuModule,
+  MatGridListModule
 ];
 
 @NgModule({

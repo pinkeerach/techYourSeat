@@ -2,9 +2,18 @@
 @import 'mixins';
 
 #contact {
-  padding: 64px;
+  background-image: url('../../assets/images/purplegeometric.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  h2 {
+    color: $white;
+  }
   @include breakpoint(xs) {
     padding: 64px 16px;
+    text-align: center;
   }
   img {
     width: 80px;
