@@ -9,22 +9,14 @@ $tys-warn: mat-palette($mat-red);
 $tys-theme: mat-light-theme($tys-primary, $tys-accent, $tys-warn);
 $tys-dark-theme: mat-dark-theme($tys-primary, $tys-accent, $tys-warn);
 
-// Colors
-$primary: mat-color(map-get($tys-theme, primary));
-$accent: mat-color(map-get($tys-theme, accent), 900);
-$warn: mat-color(map-get($tys-theme, warn));
-$light-primary: mat-color(map-get($tys-theme, primary), 100);
-$light-accent: mat-color(map-get($tys-theme, accent), 200);
-$medium-accent: mat-color(map-get($tys-theme, accent), 400);
-$dark-accent: mat-color(map-get($tys-theme, accent), 800);
-$dark-background: mat-color(map-get($tys-dark-theme, background), background);
-$light-background: mat-color(map-get($tys-theme, background), background);
+$primary: #6a0080;
+$accent: #7da453;
 $black: #000;
 $white: #fff;
 
 // Typography
-$typography-config: mat-typography-config();
-$base-font-family: mat-font-family($typography-config);
+$header-font: 'Allerta Stencil', sans-serif;
+$base-font-family: 'Libre Franklin', sans-serif;
 
 // Font Sizes
 $base-font-size: 16px;

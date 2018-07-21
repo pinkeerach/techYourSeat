@@ -1,25 +1,28 @@
-<section id="event">
-  <h1>Event Details</h1>
-  <div fxLayout="column">
-    <h2>Thursday, July 26th 6:00-8:00pm</h2>
-    <p>Did you know
-      <a href="https://smartasset.com/mortgage/best-cities-for-women-in-tech-2018">26% of tech jobs in Charlotte
-      </a>
-      are filled by women? Would you believe that number is growing? But where are all these women? And how do I connect with them?</p>
-    <p>We aim to bring them together at the first ever #techYourSeat Meet & Greet. Come out to
+<section id="event" fxLayout.xs="column" class="pa4">
+  <mat-card fxFlex="50">
+    <h2>The Venue</h2>
+    <a class="mb4" href="https://www.google.com/maps/dir/''/goodroad+ciderworks/data=!4m5!4m4!1m0!1m2!1m1!1s0x88569f23b508d0a7:0xb59575e3729602e9?sa=X&ved=0ahUKEwia2em2_67bAhVCKqwKHaanCgYQ9RcI0QEwDw"
+      fxLayout="row" fxLayoutAlign="center center">
+      <mat-icon>location_on</mat-icon>
+      <div>
+        <br> GoodRoad CiderWorks
+        <br>117 Southside Drive
+        <br>Charlotte, NC 28217
+      </div>
+    </a>
+
+    <p>Come out to
       <a href="https://goodroadciderworks.com/">GoodRoad CiderWorks</a>
-      to get to know the various meetups and organizations supporting women in tech including Girl Develop It, ChickTech Charlotte,
-      Women in UX, Women Techmakers, and Carolina Women in Tech. Not only will you get to hear what these groups are up to,
-      but you’ll also get to meet other women and advocates who are passionate about building the Charlotte tech community.
+      to meet the various organizations supporting women in tech. Not only will you see what these groups are up to, but you’ll
+      also get network with fellow advocates who are passionate about building the Charlotte tech community.
     </p>
-    <p>What is #techYourSeat all about? We are a coalition of the Charlotte women in tech meetups whose goal is to cultivate
-      a centralized movement to increase diversity in the Charlotte community.</p>
-    <p class="font-weight-bold">Come out, get to know us, and #techYourSeat!</p>
+    <p>Come out, get to know us, and #techYourSeat!</p>
     <div fxLayoutAlign="center" class="mt3">
       <button mat-button mat-raised-button class="button-link">
         <a href="https://www.eventbrite.com/e/charlotte-women-in-tech-meet-greet-tickets-46532670470" target="_blank">register
         </a>
       </button>
     </div>
-  </div>
+  </mat-card>
+  <div fxFlex="50" fxFlexOffset="10px" id="map" #gmap></div>
 </section>

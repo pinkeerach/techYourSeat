@@ -10,7 +10,6 @@
 // Base
 // ----------------------------------------------------------------
 @import 'base/root';
-@import 'base/links';
 
 // ----------------------------------------------------------------
 // Layout
@@ -26,15 +25,11 @@
 // ----------------------------------------------------------------
 @import 'utilities/spacing';
 
-// ----------------------------------------------------------------
-// Themes
-// ----------------------------------------------------------------
-@import './themes/buttons-theme';
 @include mat-core();
 
 // Component themes
 @mixin custom-components-theme($theme) {
-  @include buttons-theme($theme);
+  //@include buttons-theme($theme);
 }
 
 // Default theme to be applied
@@ -45,13 +40,4 @@
 .tys-dark-theme {
   @include angular-material-theme($tys-dark-theme);
   @include custom-components-theme($tys-dark-theme);
-}
-
-.font-weight-bold {
-  font-weight: $bold-font-weight;
-}
-
-.button-link a {
-  color: $white;
-  letter-spacing: normal;
 }

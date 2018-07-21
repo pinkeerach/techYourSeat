@@ -1,5 +1,89 @@
+@import 'variables';
+@import 'mixins';
+
 .fill-remaining-space {
   /* This fills the remaining space, by using flexbox.
      Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: transparent;
+  color: $white;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+.header-bg {
+  background-image: url('../../assets/images/purplegeometric.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: $header-height * 8;
+  @include breakpoint(xs) {
+    height: $header-height * 4;
+  }
+  h1,
+  h2,
+  h3 {
+    position: absolute;
+    height: fit-content;
+    left: 120px;
+    bottom: 0;
+    color: $white;
+    margin: 0;
+    @include breakpoint(sm) {
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+      text-align: center;
+    }
+    @include breakpoint(xs) {
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+      text-align: center;
+    }
+  }
+  h2,
+  h3 {
+    font-weight: 100;
+  }
+  h1 {
+    top: 150px;
+    font-size: 7rem;
+    @include breakpoint(sm) {
+      font-size: 5rem;
+    }
+    @include breakpoint(xs) {
+      top: 70px;
+      font-size: 3rem;
+    }
+  }
+  h2 {
+    top: 275px;
+    font-size: 2.5rem;
+    font-family: $base-font-family;
+    text-transform: inherit;
+    @include breakpoint(sm) {
+      font-size: 2rem;
+    }
+    @include breakpoint(xs) {
+      top: 130px;
+      font-size: 1.3rem;
+    }
+  }
+  h3 {
+    top: 320px;
+    font-size: 1.3rem;
+    @include breakpoint(sm) {
+      font-size: 1.2rem;
+    }
+    @include breakpoint(xs) {
+      top: 155px;
+      font-size: 1rem;
+    }
+  }
 }

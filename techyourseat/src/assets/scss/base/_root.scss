@@ -17,7 +17,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  text-align: center;
+h1,
+h2 {
+  font-family: $header-font;
   font-weight: $base-font-weight;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: $primary;
+  padding-bottom: 1rem;
+}
+hr {
+  width: 50%;
+}
+
+.mat-button,
+.mat-flat-button,
+.mat-icon-button,
+.mat-stroked-button {
+  text-transform: capitalize;
+}
+.mat-raised-button:not([class*='mat-elevation-z']) {
+  background-color: $accent;
+  text-transform: capitalize;
+  a {
+    color: $white;
+  }
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
 }
